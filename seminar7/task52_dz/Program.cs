@@ -50,17 +50,17 @@ void  SumStolb(int[,] matrix)
 {
     
 
-    for (int i = 0; i < matrix.GetLength(0); i++)
+    for (int j = 0; j < matrix.GetLength(0); j++)
     
 {
     int sum = 0;
 
     {
-        for (int j = 0; j < matrix.GetLength(1); j++)
+        for (int i = 0; i < matrix.GetLength(1); i++)
         sum = sum + matrix[i, j];
     }
 
-Console.WriteLine(sum);
+Console.Write(sum+" ");
 }
 }
 
@@ -69,4 +69,5 @@ int m = ReadNumber("Введите количество строк");
 int n = ReadNumber("Введите количество столбцов");
 int[,] matr = GetMatrix(m, n);
 PrintMatrix(matr);
+Console.WriteLine();
 SumStolb(matr);
