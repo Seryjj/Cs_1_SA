@@ -52,7 +52,7 @@ int[,] matr = GetMatrix(m, n);
 int i = ReadNumber("Введите номер строки");
 int j = ReadNumber("Введите номер столбца");
 
-if (i<m && j<n)
+if (i<m && j<n && i>=0 && j>=0 )
 Console.WriteLine(matr[i,j]);
 else
 Console.WriteLine("Такого элемента нет");
