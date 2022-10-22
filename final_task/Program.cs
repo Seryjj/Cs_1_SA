@@ -1,4 +1,9 @@
 ﻿
+string[] array1 = new string[4] {"hello", "2", "world", ":-)"};
+string[] array2 = new string[array1.Length];
+
+MassivMensche3(array1, array2);
+PrintMassiv(array2);
 
 void MassivMensche3(string[] array1, string[] array2)
 {
